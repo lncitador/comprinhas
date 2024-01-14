@@ -44,7 +44,7 @@
         return null;
       },
     });
-  };
+  }
 </script>
 
 <form on:submit|preventDefault={onSubmit} class="grid grid-cols-8 mt-8 gap-3">

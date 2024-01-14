@@ -24,10 +24,7 @@
 </script>
 
 <div class="grid col-span-4 sm:col-span-3 md:col-span-2">
-  <Label
-    for="quantidade"
-    class="group-hover:text-purple-light font-normal"
-  >
+  <Label for="quantidade" class="group-hover:text-purple-light font-normal">
     Quantidade
   </Label>
   <div class="flex">
