@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Form, { state } from "$lib/components/form"
+  import Form, { state } from "$lib/components/form";
 </script>
 
 <div
