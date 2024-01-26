@@ -9,6 +9,7 @@
 <div class="grid col-span-8 sm:col-span-1 sm:items-end" class:error>
   <button
     class="h-10 flex w-full mt-4 sm:mt-0 items-center justify-center text-2xl rounded-md bg-purple"
+    type="submit"
   >
     <PlusIcon />
   </button>

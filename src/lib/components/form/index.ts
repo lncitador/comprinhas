@@ -1,1 +1,1 @@
-export { default as default, add, reset, state } from "./Form.svelte";
+export { default, add, form, state, marcar } from "./Form.svelte";

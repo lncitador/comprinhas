@@ -4,9 +4,9 @@
   import { comprinhas } from "$lib/store/comprinhas";
   import { match } from "oxide.ts";
 
-  export let { state, add, reset } = comprinhas();
+  export let { state, add, reset, marcar } = comprinhas();
 
-  export const form = writable<Comprinha>({
+  export const form = writable<Omit<Comprinha, "verificado">>({
     categoria: "",
     item: "",
     quantidade: "",
@@ -30,7 +30,7 @@
 
   function onSubmit({ target }: Event) {
     const formData = new FormData(target as HTMLFormElement);
-    const data = Object.fromEntries(formData) as Comprinha;
+    const data = Object.fromEntries(formData) as Omit<Comprinha, "id" | "verificado">;
 
     error = match(add(data), {
       Some: (error) => error,
